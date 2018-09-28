@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <style>
+           .box{
+-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+
+box-shadow: 0 0 5px black;
+border-radius:25px;
+}
+table{
+    color:white;
+}
+         
+        </style>
+  <script>
+function validateForm() {
+    var x = document.forms["frm"]["name","mail","contact","type","dat","add"].value;
+    if (x==null || x=="") {
+        alert("All field should be filled out");
+        return false;
+    }
+}
+</script>
+    </head>
+    <body>
+    <center><div style=" width: 320px; height: 360px;  margin-top: 10px; border-radius: 2px" class="box">
+        <form name="frm" action="newuser.jsp" method="post" onsubmit="return validateForm()">
+        <table cellpadding="5" cellspacing="5">
+            <tr><th colspan="2">Login Form</th></tr>
+            <tr><th>Name</th><th><input type="text" name="name" value="" placeholder="Name" /></th></tr>
+            <tr><th>E-mail</th><th><input type="email" name="mail" value="" placeholder="E-mail" /></th></tr>
+            <tr><th>Contact No</th><th><input type="text" name="contact" maxlength="10"value="" placeholder="xxxxxxxxxx" /></th></tr>
+            <tr><th>Type</th><th><input type="text" value="User" name="type" readonly="readonly"/></th></tr>
+            <tr><th>Date</th><th><input type="date" value="" name="dat"/></th></tr>
+            <tr><th>Address</th><th><textarea name="add" rows="3" cols="20" placeholder="Your Addres"></textarea></th></tr>
+            <tr><th colspan="2"><input type="submit" value="Submit" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="firstlogin.jsp" target="ifrm"><input type="button" value="Back" style="background-color: wheat"/></a></th></tr>
+           
+            
+            
+            
+        </table>
+        </form>
+        </div></center>
+    </body>
+</html>

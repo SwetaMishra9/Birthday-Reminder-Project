@@ -1,0 +1,16 @@
+<web-app>
+
+
+
+<servlet>
+<servlet-name>Testphoto</servlet-name>
+<servlet-class>Testphoto</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Testphoto</servlet-name>
+<url-pattern>/SourcePackage.Testphoto</url-pattern>
+</servlet-mapping>
+
+
+
+</web-app>

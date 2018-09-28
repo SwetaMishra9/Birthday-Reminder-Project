@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        
+        <script language="JavaScript" type="text/JavaScript"> 
+function new_win1(new_page, win_width, win_height) { 
+var posLeft= ((screen.width/2)-(win_width/2)); 
+var posTop= ((screen.height/2)-(win_height/2)); 
+
+winID= window.open(new_page, 'newWin', 'toolbar=no, location=no, scrollbars=yes, resizable=yes, width=' + win_width + ', height=' + win_height + ', left=' + posLeft + ', top= ' + posTop); 
+winID= window.close();
+winID.focus(); 
+
+} 
+
+</script> 
+    </head>
+    <body onLoad="new_win1('admin.jsp', '1000', '900');">
+        
+    </body>
+</html>
